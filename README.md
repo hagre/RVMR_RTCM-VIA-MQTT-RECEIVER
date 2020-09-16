@@ -55,14 +55,19 @@ https://github.com/nebkat/esp32-xbee
 # Compile:
 
 require #include "PubSubClient.h" library https://github.com/knolleary/pubsubclient.git PlatforIO ID_89
+
 require #include "CircularBuffer.h" library https://github.com/rlogiacco/CircularBuffer 
 
 # see platformio.ini:
 
 require #include "verysimpletimer.h"  https://github.com/hagre/VerySimpleTimer_Library.git
+
 require #include "SyncWifiConnectionESP32.h"  https://github.com/hagre/SyncWiFIConnectionESP32_Library.git
+
 require #include "SyncMQTTConnectionESP32.h" https://github.com/hagre/SyncMQTTConnectionESP32_Library.git
+
 require #include "rtcmstreamsplitter.h" https://github.com/hagre/RTCM_Stream_Splitter_Library.git
+
 and/as above                           rlogiacco/CircularBuffer@^1.3.3
 
 
