@@ -1,0 +1,2 @@
+# RVMR_RTCM-VIA-MQTT-RECEIVER
+RVMR (RTCM VIA MQTT RECEIVER) is using the MQTT protocol (as a secure and opensource alternative to NTRIP) to get RTK correction data to my rover GPS units. As a target system i will use https://github.com/farmerbriantee/AgOpenGPS. AgOpenGPS is connecting to the RVMR as a simulated local NTRIP-Caster on Port 2101 and relay the RTCM to the rover (DualGPS) from https://github.com/mtz8302/AOG_GPS_ESP32.
