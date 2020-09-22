@@ -26,8 +26,8 @@ by hagre
 
 #define RTCM_VIA_MQTT_TRANSMITTING_WITH_PASSWORD 
 
-#define MSM4 //subscribung to RTCM-MSM4 TOPICS
-//#define MSM7 //subscribung to RTCM-MSM7 TOPICS
+//#define MSM4 //subscribung to RTCM-MSM4 TOPICS
+#define MSM7 //subscribung to RTCM-MSM7 TOPICS
 
 
 //More Settings
@@ -282,55 +282,55 @@ void setup() { // -------------------------------- S E T U P -------------------
 
   String subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
   subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-  subscriptionTopic = subscriptionTopic + "/RTCM/1005"; 
+  subscriptionTopic = subscriptionTopic + "/1005"; 
   syncMQTTConnection.addSubscriptionToTable (0, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
   subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
   subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-  subscriptionTopic = subscriptionTopic + "/RTCM/1230"; 
+  subscriptionTopic = subscriptionTopic + "/1230"; 
   syncMQTTConnection.addSubscriptionToTable (1, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
   #ifdef MSM4
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1074"; 
+    subscriptionTopic = subscriptionTopic + "/1074"; 
     syncMQTTConnection.addSubscriptionToTable (2, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1084"; 
+    subscriptionTopic = subscriptionTopic + "/1084"; 
     syncMQTTConnection.addSubscriptionToTable (3, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1094"; 
+    subscriptionTopic = subscriptionTopic + "/1094"; 
     syncMQTTConnection.addSubscriptionToTable (4, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1124"; 
+    subscriptionTopic = subscriptionTopic + "/1124"; 
     syncMQTTConnection.addSubscriptionToTable (5, subscriptionTopic.c_str(), subscriptionTopic.length ());
   #endif
 
   #ifdef MSM7
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1077"; 
+    subscriptionTopic = subscriptionTopic + "/1077"; 
     syncMQTTConnection.addSubscriptionToTable (2, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1087"; 
+    subscriptionTopic = subscriptionTopic + "/1087"; 
     syncMQTTConnection.addSubscriptionToTable (3, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1097"; 
+    subscriptionTopic = subscriptionTopic + "/1097"; 
     syncMQTTConnection.addSubscriptionToTable (4, subscriptionTopic.c_str(), subscriptionTopic.length ());
 
     subscriptionTopic = MQTT_RTCM_TOPIC_INIT;
     subscriptionTopic = subscriptionTopic + MQTT_RTCM_BASE_NAME;
-    subscriptionTopic = subscriptionTopic + "/RTCM/1127"; 
+    subscriptionTopic = subscriptionTopic + "/1127"; 
     syncMQTTConnection.addSubscriptionToTable (5, subscriptionTopic.c_str(), subscriptionTopic.length ());
   #endif
 }
